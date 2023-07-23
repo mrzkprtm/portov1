@@ -1,43 +1,52 @@
 <template>
-  <main
-    class="mt-10 md:mt-1 flex flex-col-reverse gap-8 items-center md:flex-row md:gap-16 md:justify-center min-h-[65vh] md:min-h-[80vh]">
-    <div class="space-y-2 text-center md:text-left px-10">
+  <main class="mt-10 md:mt-1 flex flex-col-reverse gap-8 items-center md:flex-row md:gap-16 md:justify-center min-h-[65vh] md:min-h-[80vh]">
+    <div class="px-10 space-y-2 text-center md:text-left">
       <p class="text-amber-200">Hello World, I'm</p>
-      <h1 class="text-4xl font-bold md:text-5xl text-white fadein-up">Bagas Rakha</h1>
+      <h1 class="text-4xl font-bold text-white md:text-5xl fadein-up">Mohammad Rizki Pratama</h1>
       <div class="py-2">
-        <h1
-          class="typewrite text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-yellow-500 md:text-2xl fadein-up"
-          ref="typewriter">
+        <h1 class="text-xl font-semibold text-transparent typewrite bg-clip-text bg-gradient-to-r from-slate-100 to-yellow-500 md:text-2xl fadein-up" ref="typewriter">
           <span class="wrap">{{ txt }}</span>
         </h1>
       </div>
-      <p class="text-white pr-4 fade-in-from-left">Welcome to My personal website. <span class="wave">👋🏼</span></p>
-      <br>
-      <!-- <button
-        class="fadein-bot fade-500 flex items-center py-2 px-4 mx-auto text-sm font-medium rounded-lg border transition duration-300 md:py-2.5 md:px-5 md:mx-0 text-amber-200 border-amber-200 hover:bg-amber-200 hover:bg-opacity-10 bg-transparent focus:outline-none w-fit"><svg
-          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-2 w-4 h-4">
-          <path fill-rule="evenodd"
-            d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm5.845 17.03a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V12a.75.75 0 00-1.5 0v4.19l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3z"
-            clip-rule="evenodd"></path>
+      <p class="pr-4 text-white fade-in-from-left">Welcome to My personal website. <span class="wave">👋🏼</span></p>
+      <br />
+      <button
+        class="fadein-bot fade-500 flex items-center py-2 px-4 mx-auto text-sm font-medium rounded-lg border transition duration-300 md:py-2.5 md:px-5 md:mx-0 text-amber-200 border-amber-200 hover:bg-amber-200 hover:bg-opacity-10 bg-transparent focus:outline-none w-fit"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 mr-2">
           <path
-            d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z">
-          </path>
-        </svg>Download Resume</button> -->
+            fill-rule="evenodd"
+            d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm5.845 17.03a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V12a.75.75 0 00-1.5 0v4.19l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3z"
+            clip-rule="evenodd"
+          ></path>
+          <path d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z"></path>
+        </svg>
+        Download Resume
+      </button>
     </div>
-    <div class="flex justify-center md:justify-start fadein-right"><img alt="avatar" fetchpriority="high" width="300" height="300" decoding="async" data-nimg="1"
-        class="w-10/12 md:h-auto rounded-full border-4 border-amber-200 pict" src="https://i1.sndcdn.com/avatars-000214125831-5q6tdw-t500x500.jpg">
+    <div class="flex justify-center md:justify-start fadein-right">
+      <img
+        alt="avatar"
+        fetchpriority="high"
+        width="300"
+        height="300"
+        decoding="async"
+        data-nimg="1"
+        class="w-10/12 border-4 rounded-full md:h-auto border-amber-200 pict"
+        src="https://i1.sndcdn.com/avatars-000214125831-5q6tdw-t500x500.jpg"
+      />
     </div>
   </main>
 </template>
 
 <script>
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   data() {
     return {
-      toRotate: ["Web Developer", "Full-stack Engineer", "Informatics Student", "Tech Enthusiast"],
+      toRotate: ["Web Developer", "Full-stack Engineer", "Informatics Student"],
       period: 2000,
-      txt: '',
+      txt: "",
       loopNum: 0,
       isDeleting: false,
     };
@@ -71,7 +80,7 @@ export default {
       if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
         this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
+      } else if (this.isDeleting && this.txt === "") {
         this.isDeleting = false;
         this.loopNum++;
         delta = 500;
@@ -81,8 +90,8 @@ export default {
         that.tick();
       }, delta);
     },
-  }
-}
+  },
+};
 </script>
 
 <style>
@@ -91,7 +100,7 @@ body {
   overflow-x: hidden;
 }
 
-.typewrite>.wrap {
+.typewrite > .wrap {
   border-right: 0.08em solid #fff;
 }
 
@@ -100,47 +109,47 @@ body {
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
-  display: inline-block
+  display: inline-block;
 }
 
 @keyframes wave-animation {
   0% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   10% {
-    transform: rotate(14deg)
+    transform: rotate(14deg);
   }
 
   20% {
-    transform: rotate(-8deg)
+    transform: rotate(-8deg);
   }
 
   30% {
-    transform: rotate(14deg)
+    transform: rotate(14deg);
   }
 
   40% {
-    transform: rotate(-4deg)
+    transform: rotate(-4deg);
   }
 
   50% {
-    transform: rotate(10deg)
+    transform: rotate(10deg);
   }
 
   60% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 }
 
 .pict {
-  box-shadow: 0px 0px 73px -9px rgba(255,219,112,0.44);
--webkit-box-shadow: 0px 0px 73px -9px rgba(255,219,112,0.44);
--moz-box-shadow: 0px 0px 73px -9px rgba(255,219,112,0.44);
+  box-shadow: 0px 0px 73px -9px rgba(255, 219, 112, 0.44);
+  -webkit-box-shadow: 0px 0px 73px -9px rgba(255, 219, 112, 0.44);
+  -moz-box-shadow: 0px 0px 73px -9px rgba(255, 219, 112, 0.44);
 }
 
 .fadein-up {
